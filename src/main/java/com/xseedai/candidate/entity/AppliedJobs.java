@@ -25,9 +25,9 @@ public class AppliedJobs {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Long AppliedJobId;
-	
 	private Long appliedJobId;
+	
+	private Long jobId;
 	
 	@ManyToOne()
 	@JoinColumn(name = "candidateId")
