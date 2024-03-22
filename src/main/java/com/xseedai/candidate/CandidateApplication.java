@@ -2,6 +2,7 @@ package com.xseedai.candidate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -21,6 +22,7 @@ import io.swagger.v3.oas.annotations.info.License;
 
 )
 @SpringBootApplication
+@EnableFeignClients
 public class CandidateApplication {
 
 	public static void main(String[] args) {
